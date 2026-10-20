@@ -1,0 +1,88 @@
+/* =================================================== */
+/* Estilos Adaptables (Responsive Web Design)          */
+/* =================================================== */
+
+/* --------------------------------------------------- */
+/* 1. Tablets en modo horizontal y laptops pequeñas    */
+/* --------------------------------------------------- */
+@media (max-width: 1024px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .servicio,
+  .galeria-item {
+    flex: 1 1 calc(50% - 40px);
+    width: calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+
+  .contacto form,
+  .registro form,
+  .login form {
+    width: 70%;
+  }
+}
+
+/* --------------------------------------------------- */
+/* 2. Tablets en modo vertical y celulares grandes     */
+/* --------------------------------------------------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-item {
+    min-width: 50%; /* Muestra 2 elementos a la vez */
+  }
+}
+
+/* --------------------------------------------------- */
+/* 3. Celulares en posición vertical                   */
+/* --------------------------------------------------- */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacto form,
+  .registro form,
+  .login form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .servicio,
+  .galeria-item {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+}
+
+/* --------------------------------------------------- */
+/* 4. Celulares pequeños                               */
+/* --------------------------------------------------- */
+@media (max-width: 480px) {
+  .carousel-item {
+    min-width: 100%; /* Muestra 1 solo elemento a la vez */
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+}

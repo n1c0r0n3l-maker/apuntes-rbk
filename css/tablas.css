@@ -1,0 +1,62 @@
+/* =================================================== */
+/* ESTILOS DE TABLAS - DISEÑO TIPO EXCEL               */
+/* =================================================== */
+
+.contenedor-tabla-materias {
+  max-width: 950px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.tabla-responsive {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.tabla-materias {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(200, 162, 200, 0.12);
+  border: 2px solid #b19cd9;
+}
+
+.tabla-materias th,
+.tabla-materias td {
+  padding: 10px 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dcd0ff; /* Líneas internas suaves estilo Excel */
+}
+
+/* Cabecera con tono lila institucional */
+.tabla-materias thead th {
+  background-color: #dcd0ff;
+  color: var(--text-color);
+  font-weight: 700;
+  border-bottom: 2px solid #b19cd9;
+}
+
+/* Columna de Años agrupada */
+.col-ano {
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: #f3efff;
+  border-right: 2px solid #b19cd9;
+}
+
+/* Alineación a la izquierda para los nombres de las materias */
+.tabla-materias td.nombre-mat {
+  text-align: left;
+}
+
+/* Estilo para cuando la materia está aprobada (tachada suave) */
+tr.materia-aprobada td.nombre-mat span {
+  text-decoration: line-through;
+  color: #999999;
+}

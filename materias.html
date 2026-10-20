@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- informacion para el navegador -->
+    <head>
+        <!-- diccionario de caracteres -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apuntes rbk</title>
+
+        <meta
+            name="description"
+            content="Apuntes rbk ofrece servicios de apuntes teoricos, clases pregrabadas y clases en vivo de distintas unidades de la carrera de medicina de la UNLP"
+        />
+
+        <meta
+            name="keywords"
+            content="Apuntes, Resumenes, Clases Online, Clases Pregrabadas"
+        />
+
+        <meta name="author" content="Nicolas Coronel"/>
+
+        <!-- Enlace a Font Awesome para cargar los iconos -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
+            crossorigin="anonymous"
+        />
+
+        <!-- Tus hojas de estilos propias -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/tablas.css" /> <!-- Archivo específico para tablas -->
+        
+    </head>
+
+    <body>
+        <!-- barra de navegación (cabecera visible de la pagina) -->
+        <header>
+            <h1><a href="index.html">Apuntes rbk</a></h1>
+
+            <!-- menu de navegación -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="materias.html">Materias</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                    <li><a href="clases_grabadas.html">Clases Grabadas</a></li>
+                    <li><a href="clases_particulares.html">Clases Particulares</a></li>
+                    <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main>
+            <section class="contenedor-tabla-materias">
+                <h2>Plan de Estudios Interactivo - Medicina (UNLP)</h2>
+                <p>Marcá las materias que ya aprobaste para ver únicamente los apuntes y clases de las materias que te quedan por cursar.</p>
+
+                <div class="tabla-responsive">
+                    <table class="tabla-materias">
+                        <thead>
+                            <tr>
+                                <th>Año</th>
+                                <th>Materias</th>
+                                <th>Aprobadas</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- ================= PRIMER AÑO ================= -->
+                            <tr data-materia="anatomia">
+                                <td rowspan="7" class="col-ano">Primer Año</td>
+                                <td class="nombre-mat"><span>Anatomía</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="anatomia"></td>
+                            </tr>
+                            <tr data-materia="biologia">
+                                <td class="nombre-mat"><span>Biología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="biologia"></td>
+                            </tr>
+                            <tr data-materia="sociales">
+                                <td class="nombre-mat"><span>Ciencias Sociales y Medicina</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="sociales"></td>
+                            </tr>
+                            <tr data-materia="histologia">
+                                <td class="nombre-mat"><span>Citología, Histología y Embriología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="histologia"></td>
+                            </tr>
+                            <tr data-materia="informatica1">
+                                <td class="nombre-mat"><span>Informática Básica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="informatica1"></td>
+                            </tr>
+                            <tr data-materia="exactas">
+                                <td class="nombre-mat"><span>Ciencias Exactas</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="exactas"></td>
+                            </tr>
+                            <tr data-materia="seminario">
+                                <td class="nombre-mat"><span>Seminario en Investigación Científica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="seminario"></td>
+                            </tr>
+
+                            <!-- ================= SEGUNDO AÑO ================= -->
+                            <tr class="separador-ano" data-materia="bioquimica">
+                                <td rowspan="6" class="col-ano">Segundo Año</td>
+                                <td class="nombre-mat"><span>Bioquímica y Biología Molecular</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="bioquimica"></td>
+                            </tr>
+                            <tr data-materia="epidemiologia">
+                                <td class="nombre-mat"><span>Epidemiología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="epidemiologia"></td>
+                            </tr>
+                            <tr data-materia="fisiologia">
+                                <td class="nombre-mat"><span>Fisiología y Física Biológica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="fisiologia"></td>
+                            </tr>
+                            <tr data-materia="psicologia">
+                                <td class="nombre-mat"><span>Psicología Médica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="psicologia"></td>
+                            </tr>
+                            <tr data-materia="ecologia">
+                                <td class="nombre-mat"><span>Ecología Humana y Promoción de la Salud</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="ecologia"></td>
+                            </tr>
+                            <tr data-materia="historia_med">
+                                <td class="nombre-mat"><span>Historia de la Medicina</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="historia_med"></td>
+                            </tr>
+
+                            <!-- ================= TERCER AÑO ================= -->
+                            <tr class="separador-ano" data-materia="farmaco_basica">
+                                <td rowspan="12" class="col-ano">Tercer Año</td>
+                                <td class="nombre-mat"><span>Farmacología Básica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="farmaco_basica"></td>
+                            </tr>
+                            <tr data-materia="info_medica">
+                                <td class="nombre-mat"><span>Informática Médica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="info_medica"></td>
+                            </tr>
+                            <tr data-materia="microbiologia">
+                                <td class="nombre-mat"><span>Microbiología y Parasitología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="microbiologia"></td>
+                            </tr>
+                            <tr data-materia="patologia">
+                                <td class="nombre-mat"><span>Patología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="patologia"></td>
+                            </tr>
+                            <tr data-materia="salud_comunitaria">
+                                <td class="nombre-mat"><span>Salud y Medicina Comunitaria</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="salud_comunitaria"></td>
+                            </tr>
+                            <tr data-materia="semiologia">
+                                <td class="nombre-mat"><span>Semiología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="semiologia"></td>
+                            </tr>
+                            <tr data-materia="ingles_medico">
+                                <td class="nombre-mat"><span>Inglés Médico</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="ingles_medico"></td>
+                            </tr>
+                            <tr data-materia="genetica">
+                                <td class="nombre-mat"><span>Genética</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="genetica"></td>
+                            </tr>
+                            <tr data-materia="inmunologia">
+                                <td class="nombre-mat"><span>Inmunología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="inmunologia"></td>
+                            </tr>
+                            <tr data-materia="salud_ambiental">
+                                <td class="nombre-mat"><span>Salud Ambiental</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="salud_ambiental"></td>
+                            </tr>
+                            <tr data-materia="estadistica">
+                                <td class="nombre-mat"><span>Estadística Aplicada a Ciencias de la Salud</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="estadistica"></td>
+                            </tr>
+                            <tr data-materia="neuroanatomia">
+                                <td class="nombre-mat"><span>Neuroanatomía Semiológica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="neuroanatomia"></td>
+                            </tr>
+
+                            <!-- ================= CUARTO AÑO ================= -->
+                            <tr class="separador-ano" data-materia="cirugia1">
+                                <td rowspan="16" class="col-ano">Cuarto Año</td>
+                                <td class="nombre-mat"><span>Cirugía I</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="cirugia1"></td>
+                            </tr>
+                            <tr data-materia="dermatologia">
+                                <td class="nombre-mat"><span>Dermatología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="dermatologia"></td>
+                            </tr>
+                            <tr data-materia="imagenes1">
+                                <td class="nombre-mat"><span>Diagnóstico y Terapéutica por Imágenes Módulo 1</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="imagenes1"></td>
+                            </tr>
+                            <tr data-materia="farmaco_aplicada">
+                                <td class="nombre-mat"><span>Farmacología Aplicada</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="farmaco_aplicada"></td>
+                            </tr>
+                            <tr data-materia="infectologia">
+                                <td class="nombre-mat"><span>Infectología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="infectologia"></td>
+                            </tr>
+                            <tr data-materia="medicina_interna1">
+                                <td class="nombre-mat"><span>Medicina Interna I</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="medicina_interna1"></td>
+                            </tr>
+                            <tr data-materia="neurologia">
+                                <td class="nombre-mat"><span>Neurología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="neurologia"></td>
+                            </tr>
+                            <tr data-materia="oftalmologia">
+                                <td class="nombre-mat"><span>Oftalmología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="oftalmologia"></td>
+                            </tr>
+                            <tr data-materia="traumatologia">
+                                <td class="nombre-mat"><span>Ortopedia y Traumatología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="traumatologia"></td>
+                            </tr>
+                            <tr data-materia="otorrino">
+                                <td class="nombre-mat"><span>Otorrinolaringología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="otorrino"></td>
+                            </tr>
+                            <tr data-materia="psiquiatria1">
+                                <td class="nombre-mat"><span>Psiquiatría Módulo 1</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="psiquiatria1"></td>
+                            </tr>
+                            <tr data-materia="salud_publica1">
+                                <td class="nombre-mat"><span>Salud Pública Módulo 1</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="salud_publica1"></td>
+                            </tr>
+                            <tr data-materia="urologia">
+                                <td class="nombre-mat"><span>Urología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="urologia"></td>
+                            </tr>
+                            <tr data-materia="bioquimica_clinica1">
+                                <td class="nombre-mat"><span>Bioquímica Clínica I</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="bioquimica_clinica1"></td>
+                            </tr>
+                            <tr data-materia="filosofia_med">
+                                <td class="nombre-mat"><span>Filosofía Médica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="filosofia_med"></td>
+                            </tr>
+                            <tr data-materia="nutricion">
+                                <td class="nombre-mat"><span>Nutrición Clínica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="nutricion"></td>
+                            </tr>
+
+                            <!-- ================= QUINTO AÑO ================= -->
+                            <tr class="separador-ano" data-materia="cirugia2">
+                                <td rowspan="19" class="col-ano">Quinto Año</td>
+                                <td class="nombre-mat"><span>Cirugía II</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="cirugia2"></td>
+                            </tr>
+                            <tr data-materia="deontologia">
+                                <td class="nombre-mat"><span>Deontología y Medicina Legal</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="deontologia"></td>
+                            </tr>
+                            <tr data-materia="imagenes2">
+                                <td class="nombre-mat"><span>Diagnóstico y Terapéutica por Imágenes Módulo 2</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="imagenes2"></td>
+                            </tr>
+                            <tr data-materia="ginecologia">
+                                <td class="nombre-mat"><span>Ginecología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="ginecologia"></td>
+                            </tr>
+                            <tr data-materia="medicina_interna2">
+                                <td class="nombre-mat"><span>Medicina Interna II</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="medicina_interna2"></td>
+                            </tr>
+                            <tr data-materia="obstetricia">
+                                <td class="nombre-mat"><span>Obstetricia</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="obstetricia"></td>
+                            </tr>
+                            <tr data-materia="pediatria">
+                                <td class="nombre-mat"><span>Pediatría</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="pediatria"></td>
+                            </tr>
+                            <tr data-materia="psiquiatria2">
+                                <td class="nombre-mat"><span>Psiquiatría Módulo 2</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="psiquiatria2"></td>
+                            </tr>
+                            <tr data-materia="salud_publica2">
+                                <td class="nombre-mat"><span>Salud Pública Módulo 2</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="salud_publica2"></td>
+                            </tr>
+                            <tr data-materia="terapia_intensiva">
+                                <td class="nombre-mat"><span>Terapia Intensiva</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="terapia_intensiva"></td>
+                            </tr>
+                            <tr data-materia="toxicologia">
+                                <td class="nombre-mat"><span>Toxicología</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="toxicologia"></td>
+                            </tr>
+                            <tr data-materia="bioetica">
+                                <td class="nombre-mat"><span>Bioética</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="bioetica"></td>
+                            </tr>
+                            <tr data-materia="bioquimica_clinica2">
+                                <td class="nombre-mat"><span>Bioquímica Clínica II</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="bioquimica_clinica2"></td>
+                            </tr>
+                            <tr data-materia="cirugia_torax">
+                                <td class="nombre-mat"><span>Cirugía de Tórax</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="cirugia_torax"></td>
+                            </tr>
+                            <tr data-materia="discapacidad">
+                                <td class="nombre-mat"><span>Discapacidad Intelectual</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="discapacidad"></td>
+                            </tr>
+                            <tr data-materia="trasplante">
+                                <td class="nombre-mat"><span>Trasplante de Órganos</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="trasplante"></td>
+                            </tr>
+                            <tr data-materia="calidad_atencion">
+                                <td class="nombre-mat"><span>Calidad de la Atención Médica</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="calidad_atencion"></td>
+                            </tr>
+                            <tr data-materia="cronico">
+                                <td class="nombre-mat"><span>El Paciente con Enfermedad Crónica de Alto Impacto Familiar</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="cronico"></td>
+                            </tr>
+                            <tr data-materia="poco_frecuentes">
+                                <td class="nombre-mat"><span>Enfermedades Poco Frecuentes en Medicina</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="poco_frecuentes"></td>
+                            </tr>
+
+                            <!-- ================= SEXTO AÑO ================= -->
+                            <tr class="separador-ano" data-materia="pfo">
+                                <td class="col-ano">Sexto Año</td>
+                                <td class="nombre-mat"><span>Práctica Final Obligatoria (PFO)</span></td>
+                                <td><input type="checkbox" class="chk-materia" data-id="pfo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2026 | Apuntes rbk | Todos los derechos reservados</p>
+
+            <div class="social-media">
+                <p>Seguinos:</p>
+
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/antoo.donat" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/antonelladonat/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>                
+            </div>
+        </footer>
+
+        <!-- Botón flotante de WhatsApp -->
+        <a href="https://api.whatsapp.com/send/?phone=5493878775916" class="whatsapp-float" target="_blank">
+            <img src="img/whatsapp.png" alt="WhatsApp" />
+        </a>
+
+        <!-- Script general de la web -->
+        <script src="js/scripts.js"></script>
+        <script src="js/materias_interactive.js"></script>
+    </body>
+</html>

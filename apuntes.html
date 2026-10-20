@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Información para el navegador -->
+    <head>
+        <!-- Diccionario de caracteres -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apuntes - Apuntes rbk</title>
+
+        <meta
+            name="description"
+            content="Descargá apuntes teóricos y resúmenes de las materias que te quedan por cursar de la carrera de Medicina de la UNLP."
+        />
+
+        <meta
+            name="keywords"
+            content="Apuntes, Resumenes, Medicina, UNLP, Material de Estudio"
+        />
+
+        <meta name="author" content="Nicolas Coronel"/>
+
+        <!-- Enlace a Font Awesome para cargar los íconos -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
+            crossorigin="anonymous"
+        />
+
+        <!-- Hojas de estilos propias -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/tablas.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+
+    <body>
+        <!-- barra de navegación (cabecera visible de la pagina) -->
+        <header>
+            <h1><a href="index.html">Apuntes rbk</a></h1>
+
+            <!-- Menú de navegación -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="materias.html">Materias</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                    <li><a href="clases_grabadas.html">Clases Grabadas</a></li>
+                    <li><a href="clases_particulares.html">Clases Particulares</a></li>
+                    <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main>
+            <section class="contenedor-tabla-materias">
+                <h2>Biblioteca de Apuntes</h2>
+                <p>Acá encontrarás disponible el material de estudio únicamente de las materias que aún tienes pendientes de aprobación.</p>
+
+                <div class="tabla-responsive">
+                    <table class="tabla-materias">
+                        <thead>
+                            <tr>
+                                <th>Materia</th>
+                                <th>Apunte / Resumen</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ================= PRIMER AÑO ================= -->
+                            <tr data-materia="anatomia">
+                                <td class="nombre-mat"><span>Anatomía</span></td>
+                                <td>Resumen Sistema Esquelético y Vísceras</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="biologia">
+                                <td class="nombre-mat"><span>Biología</span></td>
+                                <td>Guía Celular y Genética Básica</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="sociales">
+                                <td class="nombre-mat"><span>Ciencias Sociales y Medicina</span></td>
+                                <td>Apuntes Teóricos Unidad 1 a 4</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="histologia">
+                                <td class="nombre-mat"><span>Citología, Histología y Embriología</span></td>
+                                <td>Atlas Histológico y Tejidos Básicos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="informatica1">
+                                <td class="nombre-mat"><span>Informática Básica</span></td>
+                                <td>Apuntes y Prácticos de Sistemas</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="exactas">
+                                <td class="nombre-mat"><span>Ciencias Exactas</span></td>
+                                <td>Guía de Ejercicios y Fórmulas</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="seminario">
+                                <td class="nombre-mat"><span>Seminario en Investigación Científica</span></td>
+                                <td>Metodología y Trabajos Prácticos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+
+                            <!-- ================= SEGUNDO AÑO ================= -->
+                            <tr data-materia="bioquimica">
+                                <td class="nombre-mat"><span>Bioquímica y Biología Molecular</span></td>
+                                <td>Metabolismo y Vías Energéticas</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="epidemiologia">
+                                <td class="nombre-mat"><span>Epidemiología</span></td>
+                                <td>Conceptos de Salud Pública y Estadísticas</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="fisiologia">
+                                <td class="nombre-mat"><span>Fisiología y Física Biológica</span></td>
+                                <td>Fisiología Cardiovascular y Renal</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="psicologia">
+                                <td class="nombre-mat"><span>Psicología Médica</span></td>
+                                <td>Vínculo Médico-Paciente y Teorías</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="ecologia">
+                                <td class="nombre-mat"><span>Ecología Humana y Promoción de la Salud</span></td>
+                                <td>Apuntes de Cátedra</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="historia_med">
+                                <td class="nombre-mat"><span>Historia de la Medicina</span></td>
+                                <td>Resúmenes Históricos y Líneas de Tiempo</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+
+                            <!-- ================= TERCER AÑO ================= -->
+                            <tr data-materia="farmaco_basica">
+                                <td class="nombre-mat"><span>Farmacología Básica</span></td>
+                                <td>Farmacocinética y Farmacodinamia</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="info_medica">
+                                <td class="nombre-mat"><span>Informática Médica</span></td>
+                                <td>Sistemas de Información Sanitaria</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="microbiologia">
+                                <td class="nombre-mat"><span>Microbiología y Parasitología</span></td>
+                                <td>Bacteriología, Virología y Parasitología</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="patologia">
+                                <td class="nombre-mat"><span>Patología</span></td>
+                                <td>Patología General y Procesos Inflamatorios</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="salud_comunitaria">
+                                <td class="nombre-mat"><span>Salud y Medicina Comunitaria</span></td>
+                                <td>Atención Primaria de la Salud (APS)</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="semiologia">
+                                <td class="nombre-mat"><span>Semiología</span></td>
+                                <td>Guía de Examen Físico y Anamnesis</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="ingles_medico">
+                                <td class="nombre-mat"><span>Inglés Médico</span></td>
+                                <td>Glosario y Comprensión Lectora</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="genetica">
+                                <td class="nombre-mat"><span>Genética</span></td>
+                                <td>Enfermedades Hereditarias y Citogenética</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="inmunologia">
+                                <td class="nombre-mat"><span>Inmunología</span></td>
+                                <td>Respuesta Inmune Innata y Adaptativa</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="salud_ambiental">
+                                <td class="nombre-mat"><span>Salud Ambiental</span></td>
+                                <td>Factores Ambientales y Toxicología Urbana</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="estadistica">
+                                <td class="nombre-mat"><span>Estadística Aplicada a Ciencias de la Salud</span></td>
+                                <td>Bioestadística y Muestreo</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="neuroanatomia">
+                                <td class="nombre-mat"><span>Neuroanatomía Semiológica</span></td>
+                                <td>Vías Nerviosas y Síndromes Neurológicos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+
+                            <!-- ================= CUARTO AÑO ================= -->
+                            <tr data-materia="cirugia1">
+                                <td class="nombre-mat"><span>Cirugía I</span></td>
+                                <td>Técnicas Quirúrgicas y Preoperatorio</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="dermatologia">
+                                <td class="nombre-mat"><span>Dermatología</span></td>
+                                <td>Lesiones Elementales y Dermatosis</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="imagenes1">
+                                <td class="nombre-mat"><span>Diagnóstico y Terapéutica por Imágenes Módulo 1</span></td>
+                                <td>Radiografía Tórax/Abdomen y Ecografía</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="farmaco_aplicada">
+                                <td class="nombre-mat"><span>Farmacología Aplicada</span></td>
+                                <td>Esquemas Terapéuticos y Posología</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="infectologia">
+                                <td class="nombre-mat"><span>Infectología</span></td>
+                                <td>Cuadros Infecciosos Frecuentes y Antibióticos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="medicina_interna1">
+                                <td class="nombre-mat"><span>Medicina Interna I</span></td>
+                                <td>Patologías Cardiovasculares y Respiratorias</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="neurologia">
+                                <td class="nombre-mat"><span>Neurología</span></td>
+                                <td>Accidente Cerebrovascular y Epilepsia</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="oftalmologia">
+                                <td class="nombre-mat"><span>Oftalmología</span></td>
+                                <td>Ojo Rojo, Glaucoma y Patologías Oculares</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="traumatologia">
+                                <td class="nombre-mat"><span>Ortopedia y Traumatología</span></td>
+                                <td>Fracturas, Luxaciones y Yesos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="otorrino">
+                                <td class="nombre-mat"><span>Otorrinolaringología</span></td>
+                                <td>Patologías de Oído, Nariz y Garganta</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="psiquiatria1">
+                                <td class="nombre-mat"><span>Psiquiatría Módulo 1</span></td>
+                                <td>Trastornos del Estado de Ánimo y Ansiedad</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="salud_publica1">
+                                <td class="nombre-mat"><span>Salud Pública Módulo 1</span></td>
+                                <td>Sistemas Sanitaristas y Epidemiología Avanzada</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="urologia">
+                                <td class="nombre-mat"><span>Urología</span></td>
+                                <td>Cólico Renal, Hiperplasia y Litiasis</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="bioquimica_clinica1">
+                                <td class="nombre-mat"><span>Bioquímica Clínica I</span></td>
+                                <td>Interpretación del Laboratorio Clínico</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="filosofia_med">
+                                <td class="nombre-mat"><span>Filosofía Médica</span></td>
+                                <td>Epistemología y Pensamiento Médico</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="nutricion">
+                                <td class="nombre-mat"><span>Nutrición Clínica</span></td>
+                                <td>Dietoterapia y Evaluación Nutricional</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+
+                            <!-- ================= QUINTO AÑO ================= -->
+                            <tr data-materia="cirugia2">
+                                <td class="nombre-mat"><span>Cirugía II</span></td>
+                                <td>Abdomen Agudo Quirúrgico y Traumatismos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="deontologia">
+                                <td class="nombre-mat"><span>Deontología y Medicina Legal</span></td>
+                                <td>Responsabilidad Médica y Autopsia Médico-Legal</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="imagenes2">
+                                <td class="nombre-mat"><span>Diagnóstico y Terapéutica por Imágenes Módulo 2</span></td>
+                                <td>Tomografía Computada (TC) y Resonancia (RM)</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="ginecologia">
+                                <td class="nombre-mat"><span>Ginecología</span></td>
+                                <td>Patología Mamaria, Cervical y Anticoncepción</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="medicina_interna2">
+                                <td class="nombre-mat"><span>Medicina Interna II</span></td>
+                                <td>Patologías Digestivas, Renales y Endocrinas</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="obstetricia">
+                                <td class="nombre-mat"><span>Obstetricia</span></td>
+                                <td>Control Prenatal, Parto y Puerperio</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="pediatria">
+                                <td class="nombre-mat"><span>Pediatría</span></td>
+                                <td>Crecimiento, Desarrollo y Patologías Infantiles</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="psiquiatria2">
+                                <td class="nombre-mat"><span>Psiquiatría Módulo 2</span></td>
+                                <td>Psicosis, Psicofarmacología y Urgencias</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="salud_publica2">
+                                <td class="nombre-mat"><span>Salud Pública Módulo 2</span></td>
+                                <td>Gestión Sanitaria y Políticas de Salud</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="terapia_intensiva">
+                                <td class="nombre-mat"><span>Terapia Intensiva</span></td>
+                                <td>Soporte Vital, Shock y ARM</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="toxicologia">
+                                <td class="nombre-mat"><span>Toxicología</span></td>
+                                <td>Intoxicaciones Frecuentes y Antídotos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="bioetica">
+                                <td class="nombre-mat"><span>Bioética</span></td>
+                                <td>Comités de Ética y Consentimiento Informado</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="bioquimica_clinica2">
+                                <td class="nombre-mat"><span>Bioquímica Clínica II</span></td>
+                                <td>Marcadores Tumorales y Hormonales</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="cirugia_torax">
+                                <td class="nombre-mat"><span>Cirugía de Tórax</span></td>
+                                <td>Neumotórax, Hemotórax y Cirugía Pulmonar</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="discapacidad">
+                                <td class="nombre-mat"><span>Discapacidad Intelectual</span></td>
+                                <td>Abordaje Multidisciplinario e Inclusión</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="trasplante">
+                                <td class="nombre-mat"><span>Trasplante de Órganos</span></td>
+                                <td>Inmunosupresión y Criterios de Selección</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="calidad_atencion">
+                                <td class="nombre-mat"><span>Calidad de la Atención Médica</span></td>
+                                <td>Seguridad del Paciente y Auditoría Médica</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="cronico">
+                                <td class="nombre-mat"><span>El Paciente con Enfermedad Crónica de Alto Impacto Familiar</span></td>
+                                <td>Manejo Ambulatorio y Cuidados Paliativos</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-materia="poco_frecuentes">
+                                <td class="nombre-mat"><span>Enfermedades Poco Frecuentes en Medicina</span></td>
+                                <td>Enfermedades Raras y Diagnóstico Precoz</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+
+                            <!-- ================= SEXTO AÑO ================= -->
+                            <tr data-materia="pfo">
+                                <td class="nombre-mat"><span>Práctica Final Obligatoria (PFO)</span></td>
+                                <td>Guía de Internación, Guardias y Rotaciones</td>
+                                <td><a href="#" class="btn-descarga"><i class="fa-solid fa-download"></i> PDF</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2026 | Apuntes rbk | Todos los derechos reservados</p>
+
+            <div class="social-media">
+                <p>Seguinos:</p>
+
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/antoo.donat" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/antonelladonat/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>                
+            </div>
+        </footer>
+
+        <!-- Botón flotante de WhatsApp -->
+        <a href="https://api.whatsapp.com/send/?phone=5493878775916" class="whatsapp-float" target="_blank">
+            <img src="img/whatsapp.png" alt="WhatsApp" />
+        </a>
+
+        <!-- Script general y de filtrado automático -->
+        <script src="js/scripts.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Obtener materias aprobadas guardadas en la sesión del usuario
+                const aprobadas = JSON.parse(localStorage.getItem("materiasAprobadas")) || [];
+                const filasApuntes = document.querySelectorAll("tr[data-materia]");
+
+                filasApuntes.forEach(fila => {
+                    const materia = fila.getAttribute("data-materia");
+            
+                    // Si la materia ya fue aprobada en la página de materias, ocultamos la fila de apuntes
+                    if (aprobadas.includes(materia)) {
+                        fila.style.display = "none";
+                    } else {
+                        fila.style.display = ""; // Se mantiene visible porque está pendiente
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
